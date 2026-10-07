@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Bootstrap 5</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN (Được sử dụng cho phần Tính năng) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS (nếu cần tinh chỉnh thêm) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVBAR (Thanh điều hướng) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MyBrand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Tính năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO / BANNER SECTION (Thay thế Jumbotron trong Bootstrap 5) -->
+    <section id="hero" class="bg-primary text-white text-center py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start text-center mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">Giải Pháp Công Nghệ Đột Phá</h1>
+                    <p class="lead mb-4">Chúng tôi mang đến giải pháp tối ưu giúp nâng cao hiệu suất công việc và nâng tầm doanh nghiệp của bạn.</p>
+                    <a href="#cta" class="btn btn-warning btn-lg me-2 fw-semibold px-4">Đăng ký ngay</a>
+                    <a href="#about" class="btn btn-outline-light btn-lg px-4">Xem thêm</a>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Sử dụng img-fluid để hình ảnh tự động co giãn responsive -->
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-3 shadow" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. GIỚI THIỆU SECTION -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <!-- Cột hình ảnh -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow-sm" alt="About Us">
+                </div>
+                <!-- Cột nội dung -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Về Sản Phẩm Của Chúng Tôi</h2>
+                    <p class="text-muted">
+                        Sản phẩm được xây dựng trên nền tảng công nghệ hiện đại, thân thiện với người dùng và tương thích hoàn hảo trên mọi thiết bị di động cũng như máy tính bảng.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Giao diện thiết kế hiện đại, tinh tế.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Tối ưu hóa tốc độ tải trang cực nhanh.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Hỗ trợ khách hàng chuyên nghiệp 24/7.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TÍNH NĂNG SECTION (4 Cột sử dụng Grid System) -->
+    <section id="features" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tính Năng Nổi Bật</h2>
+                <p class="text-muted">Khám phá những điểm mạnh tạo nên sự khác biệt của chúng tôi</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Tính năng 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-primary mb-3">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Tốc Độ Nhanh</h5>
+                            <p class="card-text text-muted">Xử lý dữ liệu siêu tốc, giúp tiết kiệm thời gian vận hành tối đa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tính năng 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-success mb-3">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Bảo Mật Cao</h5>
+                            <p class="card-text text-muted">Đảm bảo an toàn thông tin dữ liệu cho khách hàng ở mức tuyệt đối.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tính năng 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-warning mb-3">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Responsive</h5>
+                            <p class="card-text text-muted">Hiển thị chuẩn xác và đẹp mắt trên mọi kích thước màn hình.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tính năng 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-danger mb-3">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Hỗ Trợ 24/7</h5>
+                            <p class="card-text text-muted">Đội ngũ kĩ thuật tận tâm luôn sẵn sàng giải đáp thắc mắc mọi lúc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. KÊU GỌI HÀNH ĐỘNG (CTA - Call To Action) -->
+    <section id="cta" class="py-5 bg-dark text-white text-center">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-3">Sẵn Sàng Trải Nghiệm Ngay?</h2>
+            <p class="lead text-secondary mb-4">Đăng ký hôm nay để nhận được ưu đãi trải nghiệm 30 ngày hoàn toàn miễn phí!</p>
+            <a href="#" class="btn btn-primary btn-lg px-5 shadow">Đăng Ký Ngay</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-secondary text-center py-3 border-top border-secondary">
+        <div class="container">
+            <small>&copy; 2026 MyBrand. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle CDN (Chứa cả Popper.js cho Dropdown, Navbar toggler, v.v.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
